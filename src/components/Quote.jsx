@@ -12,8 +12,7 @@ function Quote() {
         }
 
       `}</style>
-    <h3>“Intervention only works when the people concerned seem to be keen for peace.”
-— Nelson Mandela</h3>
+
     </div>
   );
 

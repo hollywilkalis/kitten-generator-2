@@ -1,5 +1,5 @@
 import React from 'react';
-import kitteh from './../../kitteh1.jpg';
+
 
 
 function CatImage() {
@@ -12,7 +12,7 @@ function CatImage() {
           height: 200px;
         }
       `}</style>
-    <img src={kitteh} />
+
     </div>
   )
 

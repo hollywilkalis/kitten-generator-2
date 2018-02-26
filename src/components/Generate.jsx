@@ -1,15 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 
 
-function Generate() {
+function Generate(props) {
   return (
     <div>
-      Hey Generate works!
+      <button onClick={props.onGenerate} >
+        Click Me!</button>
     </div>
   );
 
 }
+
+Generate.propTypes = {
+  onGenerate: PropTypes.func
+};
 
 
 export default Generate;
