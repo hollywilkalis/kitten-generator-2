@@ -7,7 +7,9 @@ function App() {
   return (
     <div>
       <style jsx global>{`
-
+        * {
+          font-family: monospace;
+        }
       `}</style>
       <Header />
       <Body />

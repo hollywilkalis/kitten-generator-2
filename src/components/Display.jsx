@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CatImage from './CatImage';
-import Quote from './Quote';
+import Poster from './Poster';
 
 
 function Display(props) {
@@ -9,22 +8,25 @@ function Display(props) {
     <div className="poster">
       <style jsx global>{`
         .poster {
-          background-color: black;
           width: 600px;
           height: 400px;
         }
 
       `}</style>
-      <CatImage />
-      <Quote />
+    {Object.keys(props.posterList).map(function(posterId) {
+      var poster = props.posterList[posterId];
+        return <Poster
+          image={poster.image}
+          quote={poster.quote}
+          key={poster.posterId} />;
+    })}
     </div>
   );
 
 }
 
 Display.propTypes = {
-  catimage: PropTypes.string,
-  quote: PropTypes.string
+  posterList: PropTypes.object
 };
 
 export default Display;
