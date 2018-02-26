@@ -9,7 +9,7 @@ function App() {
       <style jsx global>{`
 
       `}</style>
-    Inspirational Kittehs For You!
+      <Header />
       <Body />
     </div>
   );

@@ -10,7 +10,7 @@ function Body(props) {
       <Generate />
       <Display />
     </div>
-  )
+  );
 
 }
 

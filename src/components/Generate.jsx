@@ -7,7 +7,7 @@ function Generate() {
     <div>
       Hey Generate works!
     </div>
-  )
+  );
 
 }
 

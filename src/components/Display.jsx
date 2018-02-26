@@ -6,11 +6,19 @@ import Quote from './Quote';
 
 function Display(props) {
   return (
-    <div>
+    <div className="poster">
+      <style jsx global>{`
+        .poster {
+          background-color: black;
+          width: 600px;
+          height: 400px;
+        }
+
+      `}</style>
       <CatImage />
       <Quote />
     </div>
-  )
+  );
 
 }
 
