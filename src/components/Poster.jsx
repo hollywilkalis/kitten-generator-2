@@ -7,8 +7,8 @@ function Poster(props) {
     <div>
       <style jsx global>{`
         .img-styles {
-          width: 100vw;
-          
+          width: 100%;
+
         }
       `}</style>
     <div>

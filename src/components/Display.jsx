@@ -8,8 +8,13 @@ function Display(props) {
     <div className="poster">
       <style jsx global>{`
         .poster {
-          width: 600px;
-          height: 400px;
+          padding: 25px;
+          display: flex;
+          background-color: darkgrey;
+          justify-content: center;
+          border: 3px solid black;
+          font-size: 2.5em;
+          margin: 20px;
         }
 
       `}</style>
