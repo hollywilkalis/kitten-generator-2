@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
-import imageReducer from './imageReducer';
-import quoteReducer from './quoteReducer';
+import changePosterReducer from './changePosterReducer';
+import createPosterReducer from './createPosterReducer';
 
 const rootReducer = combineReducers({
-  currentPosterId: imageReducer,
-  posterById: imageReducer
+  currentPosterId: changePosterReducer,
+  posterById: createPosterReducer
 });
 
 export default rootReducer;

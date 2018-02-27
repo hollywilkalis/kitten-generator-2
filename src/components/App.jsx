@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Body from './Body';
 import Header from './Header';
+import PosterSearch from './PosterSearch';
+import PosterDisplay from './PosterDisplay';
+import PosterList from './PosterList';
 
-function App() {
+const App = () => {
   return (
     <div>
       <style jsx global>{`
@@ -12,7 +13,9 @@ function App() {
         }
       `}</style>
       <Header />
-      <Body />
+      <PosterSearch />
+      <PosterList />
+      <PosterDisplay />
     </div>
   );
 }

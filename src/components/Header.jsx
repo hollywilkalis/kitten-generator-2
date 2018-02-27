@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-function Header(){
+const Header = () => {
   return (
     <div className='header-styles'>
       <style jsx global>{`

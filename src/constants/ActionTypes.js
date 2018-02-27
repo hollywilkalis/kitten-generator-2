@@ -1,2 +1,3 @@
+export const RECEIVE_IMAGE = 'RECEIVE_IMAGE';
 export const REQUEST_IMAGE = 'REQUEST_IMAGE';
-export const REQUEST_QUOTE = 'REQUEST_QUOTE';
+export const CHANGE_IMAGE = 'CHANGE_IMAGE';

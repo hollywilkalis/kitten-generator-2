@@ -1,7 +1,6 @@
 {
   "name": "inspirational-kittehs",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "lint": "eslint src/** src/**/**; exit 0",
@@ -12,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "moment": "^2.20.1",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
@@ -19,7 +19,9 @@
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
-    "styled-jsx": "^2.2.5"
+    "redux-thunk": "^2.2.0",
+    "styled-jsx": "^2.2.5",
+    "uuid": "^3.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -37,5 +39,14 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hollywilkalis/inspirational-kittens.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hollywilkalis/inspirational-kittens/issues"
+  },
+  "homepage": "https://github.com/hollywilkalis/inspirational-kittens#readme",
+  "description": ""
 }

@@ -1,27 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-import { AppContainer } from 'react-hot-loader';
-import { HashRouter } from 'react-router-dom';
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './reducers';
+import { Provider } from 'react-redux';
+import thunkMiddleware from 'redux-thunk';
+import persistDataLocally from './middleware/persist-data-locally';
 
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, persistDataLocally));
 
-const render = (Component) => {
-  ReactDOM.render(
-    <AppContainer>
-      <HashRouter>
-        <Component />
-      </HashRouter>
-    </AppContainer>,
-    document.getElementById('react-app-root')
-  );
-};
-
-render(App);
-
-/*eslint-disable */
-if (module.hot) {
-  module.hot.accept('./components/App', () => {
-    render(App);
-  });
-}
-/*eslint-enable */
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('react-app-root')
+);
