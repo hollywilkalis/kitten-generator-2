@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Poster from './Poster';
 
-
 function Display(props) {
   return (
     <div className="poster">

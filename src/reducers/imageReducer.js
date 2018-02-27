@@ -8,7 +8,7 @@ const imageReducer = (state = initialState.currentPosterId, action) => {
       return action.currentPosterId;
     default:
       return state;
-  }
+    }
 };
 
 export default imageReducer;

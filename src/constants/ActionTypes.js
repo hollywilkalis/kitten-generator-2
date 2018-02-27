@@ -1,1 +1,2 @@
 export const REQUEST_IMAGE = 'REQUEST_IMAGE';
+export const REQUEST_QUOTE = 'REQUEST_QUOTE';
