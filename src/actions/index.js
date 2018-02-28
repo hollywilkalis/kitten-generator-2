@@ -12,9 +12,9 @@ export const requestImage = (imageURL, localPosterId) => ({
   posterId: localPosterId
 });
 
-export const receiveImage = (imageURL, quote, localPosterId) => ({
+export const receiveImage = (imageURL, quote, posterId) => ({
   type: types.RECEIVE_IMAGE,
-  localPosterId,
+  posterId,
   imageURL,
   quote
 });
