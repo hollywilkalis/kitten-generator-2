@@ -26,10 +26,11 @@ export function fetchImage(input) {
       error => console.log('oopsie', error)
     ).then(function(json) {
       if (json.results.length > 0) {
-        const posterId = v4();
-        console.log(posterId)
-        const imageURL = json.results[0].urls.regular;
-        dispatch(receiveImage(imageURL, posterId));
+        for (let i = 0; i < 1; i++) {
+          const localPosterId = v4();
+          const imageURL = json.results[0].urls.regular;
+          dispatch(receiveImage(imageURL, localPosterId));
+        }
       } else {
         console.log('nope');
       }

@@ -7,11 +7,10 @@ const PosterList = ({ dispatch, posterList }) => {
   return (
     <div>
       {Object.keys(posterList).map(posterId => {
-        console.log('poster:' + posterId);
         let poster = posterList[posterId];
         return <li key = {posterId} onClick ={() => {
             dispatch(changeImage(posterId));
-          }}>{posterId}</li>;
+          }}>{poster.imageURL}</li>;
       })}
     </div>
   );
